@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Web Audio Basics</title>
+  <meta name="description" content="IIR Filter Demo for Web Audio API">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.4.7/plyr.css"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.4.7/plyr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="column add-bottom">
+        <div id="mainwrap">
+            <div id="nowPlay">
+                <span id="npAction">Paused...</span><span id="npTitle"></span>
+            </div>
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                </div>
+                <div id="tracks">
+                  <div id="coordinates">
+                   <p>
+                     Coordinates:
+                     (<span id="beta" class="value">null</span>,
+                     <span id="gamma" class="value">null</span>,
+                     <span id="alpha" class="value">null</span>)
+                     <br />
+                     Position absolute? <span id="is-absolute" class="value">unavailable</span>
+                     </p>
+                  </div>
+                  <div id="orientation-not-supported" class="hidden">
+                     <p>Deviceorientation event not supported 😢</p>
+                  </div>
+                </div>
+            </div>
+            <div id="plwrap">
+                <ul id="plList"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="column add-bottom center">
+        <p>Based on pen: <a href="https://codepen.io/markhillard/pen/Hjcwu">Responsive Audio Player</a></p>
+    </div>
+</div>
+</body>
+</html>
